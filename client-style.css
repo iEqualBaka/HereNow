@@ -1,0 +1,177 @@
+body {
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: Georgia, serif;
+}
+
+  
+   header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 50px;
+    margin-right: 20px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+.nav {
+    border-bottom: 5px solid grey;
+    display: flex;
+    justify-content: space-between;
+    height: 8vh;
+}
+
+.school-name, .account {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.school-name img {
+    float: left;
+    margin: none;
+    height: 50px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.account {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.right {
+    margin-right: 10px;
+}
+
+.action-container {
+    border: 5px solid grey;
+    border-radius: 5px;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.action {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.report {
+    margin: 0;
+}
+
+p {
+    font-size: 2rem;
+}
+
+button {
+    width: 100px;
+    height: 45px;
+    border-radius: 15px;
+    background-color: #333;
+    color: white;
+}
+
+
+.issue-container {
+    border: 5px solid grey;
+    border-radius: 5px;
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    padding: 30px;
+    font-size: 2rem;
+}
+
+.issue {
+    text-align: center;
+    font-size: 2rem;
+    border: none;
+}
+
+textarea {
+    background-color: #333;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-radius: 2px;
+}
+
+button {
+  font-family: Georgia, serif;
+}
+
+input {
+    font-family: Georgia, serif;
+    background-color: #333;
+    margin-bottom: 10px;
+    color: white;
+    font-size: 1rem;
+    border-radius: 2px;
+}
+
+#issue-title, #location {
+    height: 25px;
+}
+input[type="submit"] {
+    display: block;
+    width: 20%;
+    margin: 1em auto;
+    height: 2em;
+    background-color: #333;
+    color: white;
+    border-radius: 15px;
+
+  }
