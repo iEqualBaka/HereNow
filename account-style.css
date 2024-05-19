@@ -1,0 +1,59 @@
+
+body{
+    background-color: #333;
+    color: white;
+}
+.title-box{
+    border: 5px solid gray;
+    border-radius: 15px;
+    background-color: #333;
+    width: 50%;
+    height: 550px;
+    margin: auto;
+    margin-top: 5%;
+}
+.mini-box{
+    border: 5px solid gray;
+    border-radius: 15px;
+    background-color: #333;
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+}
+.profile{
+    margin-left: 10%;
+    margin-top: -15%;
+    font-size: 350%;
+}
+
+.email{
+    margin-left: 10%;
+    margin-top: 15%;
+}
+
+.ID{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.campus{
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+
+.pfp{
+    width:110px;
+    height:110px;
+    margin-top: -25%;
+    margin-left: 70%;
+}
+
+
+.edit-settings{
+    background-color: #FFFFFF;
+    width: 77%;
+    height: 40px;
+    margin-left: 10%;   
+    margin-top: 10%
+}

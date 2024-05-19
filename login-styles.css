@@ -1,0 +1,164 @@
+body {
+    background-color: #333;
+    color: white;
+
+}
+
+.title-container {
+    border: 5px solid gray;
+    border-radius: 15px;
+    background-color: #333;
+    width: 50%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px; 
+}
+
+.login-label {
+    margin-left: 10%;
+
+}
+
+.login-password-label {
+    margin-left: 10%;
+}
+
+.password-label {
+    display: block;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.body-container{
+    padding: 25px;
+    border: 5px solid gray;
+    border-radius: 15px;
+    background-color: #333;
+    width: 30%;
+    height: 410px;
+    margin: auto;
+    margin-top: 5%;
+}
+
+h2{
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.email-input{
+    color: white;
+    background-color: #333;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 40px;
+    width: 75%;
+    margin-left: 10%;
+}
+
+h3{
+    text-align: left;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: 5%;   
+}
+.password-input{
+    color: white;
+    background-color: #333;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 40px;
+    display:block;
+    width: 75%;
+    margin-left: 10%;
+}
+
+.login-button{
+    background-color: #FFFFFF;
+    width: 77%;
+    height: 40px;
+    margin-left: 10%;   
+    margin-top: 10%
+}
+
+h4{
+text-align: center;
+font-size: 15px;
+margin-top: 5%; 
+}
+
+.register-button{
+    background-color: #FFFFFF;
+    width: 77%;
+        height: 40px;
+    margin-left: 10%;   
+    margin-top: 0%
+}
+
+/* BELOW IS THE CONTENTS OF register.html*/
+
+.body2 {
+    background-color: #333;
+    color: white;
+}
+
+.title-container2 {
+    border: 5px solid gray;
+    border-radius: 15px;
+    background-color: #333;
+    width: 50%;
+    margin-left: auto;
+    margin-top: 5%; 
+    margin-right: auto;
+}
+.body-title2 { /*register*/
+    display: block;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+    border: none; 
+}
+
+.body-container2 {
+    display:flex;
+    flex-direction: column;
+    border: 5px solid gray;
+    border-radius: 15px;
+    background-color: #333;
+    width: 30%;
+    height: 410px;
+    margin-left: auto;
+    margin-top: 5%; 
+    margin-right: auto;
+    padding: 30px;
+    text-align: center;
+}
+.email-label, .password-label { /*email address*/
+    font-size: 15px;
+    margin-top: 5%;
+    margin-left: 0%;
+    display: block;
+    text-align: left;
+}
+
+.email-input2, .password-input2{
+    color: white;
+    background-color: #333;
+    border: 1px solid gray;
+    border-radius: 15px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.CreateAccount{
+    background-color: #FFFFFF;
+    width: 45%;
+    height: 40px;
+    margin: 1em auto;
+}
