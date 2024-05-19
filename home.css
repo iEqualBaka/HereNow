@@ -1,6 +1,6 @@
 body {
-    background-color: #333;
-    color: white;
+    background-color: #f9f9f9;
+    color: black;
     font-family: Georgia, serif;
 }
 
@@ -23,8 +23,8 @@ button {
     margin: 1em auto;
     height: 2em;
     width: 8em;
-    background-color: #333;
-    color: white;
+    background-color: #f9f9f9;
+    color: black;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
