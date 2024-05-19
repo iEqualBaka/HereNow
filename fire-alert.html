@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Alert</title>
+    <link href="./client-style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./laurier-short.png" alt="Logo">
+          <h1>Site Title</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portal">Portal</a></li>
+            <li><a href="#account">Account</a></li>
+          </ul>
+        </nav>
+    </header>
+    <hr>
+    <form id="fire-report">
+       <div class="issue-container">
+        <fieldset class="issue">Report Fire</fieldset>
+        <label for="fire-title" id="fire-label">Issue</label>
+        <input type="text" required id="fire-title">
+        <label for="fire-location" id="fire-location-label">Location</label>
+        <input type="text" required id="fire-location">
+        <input id="submit" type="submit" value="Submit">
+       </div>
+    </form>
+
+</body>
+</html>

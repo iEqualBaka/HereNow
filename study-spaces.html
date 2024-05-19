@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server</title>
+    <link href="style.css" rel="stylesheet">    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.wlu.ca/_ato/dist/img/laurier-short.png" alt="Logo">
+            <h1>Site Title</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#portal">Portal</a></li>
+                <li><a href="#account">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>
+        Lecture Hall Status
+    </h2>
+    <div class="accord">
+        <details class="accordion">
+            <summary class="accordion__header">
+                LH 1001 - Open
+            </summary>
+            <div class="accordion__content">
+                <p class="px-4 py-2 text-sm text-black">
+                    Occupancy<br>
+                    -  minimal 
+                </p>
+                <p>
+                    Noise<br>
+                    -  quiet
+                </p>
+                <p>
+                    Lighting<br>
+                    -  bright
+                </p>
+            </div>
+        </details>
+        <details class="accordion">
+            <summary class="accordion__header">
+                LH 1010 - Open
+            </summary>
+            <div class="accordion__content">
+                <p class="px-4 py-2 text-sm text-black">
+                    Occupancy<br>
+                    -  moderate 
+                </p>
+                <p>
+                    Noise<br>
+                    -  average
+                </p>
+                <p>
+                    Lighting<br>
+                    -  bright
+                </p>
+            </div>
+        </details>
+        <details class="accordion">
+            <summary class="accordion__header">
+                LH 1009 - Closed
+            </summary>
+            <div class="accordion__content">
+                <p class="px-4 py-2 text-sm text-black">
+                    Occupancy<br>
+                    -  Class in Progress
+                </p>
+            </div>
+        </details>
+    </div>
+    
+    <script>
+        const accordionHeaders = document.querySelectorAll('.accordion__header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                header.closest('.accordion').classList.toggle('open');
+            });
+        });
+    </script>
+</body>
+</html>

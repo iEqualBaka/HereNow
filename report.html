@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Issue Report</title>
+    <link href="./client-style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="./laurier-short.png" alt="Logo">
+          <h1>Site Title</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portal">Portal</a></li>
+            <li><a href="#account">Account</a></li>
+          </ul>
+        </nav>
+      </header>
+      <hr>
+    <form id="issue-report">
+        <div class="issue-container">
+            <fieldset class="issue">Report Issue</fieldset>
+            <label for="issue-title" id="issue-label">Issue</label>
+            <input type="text" required id="issue-title">
+            <label for="location" id="location-label">Location</label>
+            <input type="text" required id="location">
+            <label for="description" id="description-label">Description</label>
+            <textarea rows="5" type="text" id="description" required></textarea>
+            <label for="img" id="description-label" id="proof">Image</label>
+            <video id="video" width="200" height="130" autoplay></video>
+            <button id="capture">Capture</button>
+            <button id="retake" disabled>Retake</button>
+            <button id="save" disabled>Save</button>
+            <input id="submit" type="submit" value="Submit">
+        </div>
+    </form>
+
+  <script>
+    // Access the user's camera and stream the video
+    navigator.mediaDevices.getUserMedia({ video: true })
+      .then(function(stream) {
+        var videoElement = document.getElementById('video');
+        videoElement.srcObject = stream;
+      })
+      .catch(function(error) {
+        console.error('Error accessing the camera: ', error);
+      });
+
+    // Capture the video frame and display it on a canvas
+    var captureButton = document.getElementById('capture');
+    var retakeButton = document.getElementById('retake');
+    var saveButton = document.getElementById('save');
+
+    captureButton.addEventListener('click', function() {
+      var videoElement = document.getElementById('video');
+      var canvas = document.createElement('canvas');
+      var context = canvas.getContext('2d');
+      canvas.width = videoElement.videoWidth;
+      canvas.height = videoElement.videoHeight;
+      context.drawImage(videoElement, 0, 0, canvas.width, canvas.height);
+      
+      // Disable capture button, enable retake and save buttons
+      captureButton.disabled = true;
+      retakeButton.disabled = false;
+      saveButton.disabled = false;
+
+      // Display the captured image on the page
+      document.body.appendChild(canvas);
+    });
+
+    // Retake the picture
+    retakeButton.addEventListener('click', function() {
+      var canvas = document.querySelector('canvas');
+      canvas.remove();
+
+      // Enable capture button, disable retake and save buttons
+      captureButton.disabled = false;
+      retakeButton.disabled = true;
+      saveButton.disabled = true;
+    });
+
+    // Save the picture to the server
+    saveButton.addEventListener('click', function() {
+      var canvas = document.querySelector('canvas');
+      var dataURL = canvas.toDataURL(); // Convert canvas to base64 data URL
+
+      // Log the picture as base64 in the console
+      console.log(dataURL);
+
+      // Reset the UI after saving
+      canvas.remove();
+      captureButton.disabled = false;
+      retakeButton.disabled = true;
+      saveButton.disabled = true;
+    });
+  </script>
+</body>
+</html>
+
