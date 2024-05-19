@@ -1,1 +1,31 @@
+body {
+    background-color: #333;
+    color: white;
+    font-family: Georgia, serif;
+}
 
+.title {
+    font-size: 12rem;
+    margin-bottom: 5px;
+}
+
+div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+p {
+    font-size: 3rem;
+}
+
+button {
+    font-size: 2rem;
+    margin: 1em auto;
+    height: 2em;
+    width: 8em;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
