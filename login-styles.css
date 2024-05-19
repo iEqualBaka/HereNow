@@ -1,13 +1,14 @@
 body {
-    background-color: #333;
-    color: white;
+    background-color: #f9f9f9;
+    color: black;
 
 }
 
 .title-container {
     border: 5px solid gray;
     border-radius: 15px;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     width: 50%;
     margin: auto;
     margin-top: 5%;
@@ -37,7 +38,8 @@ h1{
     padding: 25px;
     border: 5px solid gray;
     border-radius: 15px;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     width: 30%;
     height: 410px;
     margin: auto;
@@ -52,8 +54,8 @@ h2{
 }
 
 .email-input{
-    color: white;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     border: 1px solid gray;
     border-radius: 15px;
     height: 40px;
@@ -68,8 +70,8 @@ h3{
     margin-top: 5%;   
 }
 .password-input{
-    color: white;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     border: 1px solid gray;
     border-radius: 15px;
     height: 40px;
@@ -79,7 +81,7 @@ h3{
 }
 
 .login-button{
-    background-color: #FFFFFF;
+    background-color: #f9f9f9;
     width: 77%;
     height: 40px;
     margin-left: 10%;   
@@ -93,7 +95,7 @@ margin-top: 5%;
 }
 
 .register-button{
-    background-color: #FFFFFF;
+    background-color: #f9f9f9;
     width: 77%;
         height: 40px;
     margin-left: 10%;   
@@ -103,14 +105,15 @@ margin-top: 5%;
 /* BELOW IS THE CONTENTS OF register.html*/
 
 .body2 {
-    background-color: #333;
-    color: white;
+    background-color: #f9f9f9;
+    color: black;
 }
 
 .title-container2 {
     border: 5px solid gray;
     border-radius: 15px;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     width: 50%;
     margin-left: auto;
     margin-top: 5%; 
@@ -129,7 +132,8 @@ margin-top: 5%;
     flex-direction: column;
     border: 5px solid gray;
     border-radius: 15px;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     width: 30%;
     height: 410px;
     margin-left: auto;
@@ -147,8 +151,8 @@ margin-top: 5%;
 }
 
 .email-input2, .password-input2{
-    color: white;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     border: 1px solid gray;
     border-radius: 15px;
     height: 30px;
@@ -157,7 +161,7 @@ margin-top: 5%;
 }
 
 .CreateAccount{
-    background-color: #FFFFFF;
+    background-color: #f9f9f9;
     width: 45%;
     height: 40px;
     margin: 1em auto;
