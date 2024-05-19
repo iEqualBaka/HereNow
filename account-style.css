@@ -1,12 +1,13 @@
 
 body{
-    background-color: #333;
-    color: white;
+    background-color: #f9f9f9;
+    color: black;
 }
 .title-box{
     border: 5px solid gray;
     border-radius: 15px;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     width: 50%;
     height: 550px;
     margin: auto;
@@ -15,7 +16,8 @@ body{
 .mini-box{
     border: 5px solid gray;
     border-radius: 15px;
-    background-color: #333;
+    background-color: #f9f9f9;
+    color: black;
     width: 90%;
     margin: auto;
     margin-top: 20%;
@@ -50,10 +52,14 @@ body{
 }
 
 
-.edit-settings{
-    background-color: #FFFFFF;
+#edit-settings{
+    background-color: #f9f9f9;
     width: 77%;
     height: 40px;
     margin-left: 10%;   
     margin-top: 10%
+}
+
+#edit-settings:hover {
+    cursor: grab;
 }
